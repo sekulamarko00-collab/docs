@@ -1,107 +1,41 @@
 ---
-title: "Uvod"
+title: "Početna"
+description: "Zvanični centar za pomoć i dokumentaciju ULCREW platforme."
+icon: house
 ---
 
-<img
-  src="/images/ULCREW-Smart-Workforce-Management.png"
-  alt="ULCREW Smart Workforce Management"
-  title="ULCREW Smart Workforce Management"
-  className="mx-auto"
-/>
+<div className="flex justify-center my-6">
+  <img src="/logo/light.svg" alt="ULCREW" className="w-full max-w-[570px]" />
+</div>
 
-## Šta je ULCREW?
+<div className="text-center mb-8">
+  <h2>Centar za pomoć i dokumentaciju</h2>
+  <p>Jasna uputstva za administratore, šefove gradilišta i radnike.</p>
+</div>
 
-**ULCREW** je digitalna platforma za upravljanje zaposlenima, gradilištima i evidencijom radnog vremena, razvijena za građevinske kompanije i timove koji rade na terenu.
+## Sadržaj dokumentacije
 
-Cilj platforme je da pojednostavi svakodnevne administrativne procese, smanji potrebu za ručnim vođenjem evidencije i omogući pouzdan pregled radnih aktivnosti zaposlenih.
+<Columns cols={2}>
+  <Card title="Uvod" icon="book-open" href="/uvod">
+    Upoznajte ULCREW i uloge korisnika.
+  </Card>
+  <Card title="Prvi koraci" icon="rocket" href="/prvi-koraci">
+    Prijavljivanje i početno podešavanje kompanije.
+  </Card>
+  <Card title="Administratorski panel" icon="monitor" href="/admin/pregled">
+    Zaposleni, gradilišta, smene, odsustva i obračuni.
+  </Card>
+  <Card title="Šef gradilišta" icon="hard-hat" href="/sef-gradilista/pregled">
+    Rasporedi i evidencija dodeljenih gradilišta.
+  </Card>
+  <Card title="Android aplikacija" icon="smartphone" href="/android/instalacija">
+    GPS prijava, prelazak, rasporedi i lični sati.
+  </Card>
+  <Card title="Pomoć i podrška" icon="circle-help" href="/pomoc/cesta-pitanja">
+    GPS, internet, prijava i najčešća pitanja.
+  </Card>
+</Columns>
 
-ULCREW povezuje kancelariju i gradilišta kroz dva međusobno povezana sistema:
-
-- **Web administratorski panel** — namenjen vlasnicima kompanija, administratorima i šefovima gradilišta.
-- **Android aplikaciju** — namenjenu zaposlenima za evidenciju radnog vremena, pregled rasporeda i upravljanje ličnim zahtevima.
-
----
-
-## Kako funkcioniše ULCREW?
-
-Platforma omogućava da se organizacija rada, evidencija prisustva i obračun radnih sati obavljaju u jednom sistemu.
-
-### 1. Organizacija kompanije
-
-Administrator dodaje zaposlene, definiše aktivna gradilišta i organizuje radne rasporede.
-
-Svaki zaposleni dobija pristup odgovarajućim funkcijama prema svojoj korisničkoj ulozi.
-
-### 2. Evidencija radnog vremena
-
-Zaposleni koriste Android aplikaciju za prijavljivanje dolaska i odjavljivanje sa posla.
-
-ULCREW koristi GPS lokaciju za proveru prisustva na gradilištu i evidentira radne smene.
-
-Kada internet nije dostupan, podržana je offline evidencija sa naknadnom sinhronizacijom. Evidencije koje zahtevaju dodatnu proveru označavaju se za administratorsku potvrdu.
-
-### 3. Automatski obračun radnih sati
-
-Na osnovu evidentiranih smena i definisanih rasporeda, sistem obračunava radne sate.
-
-Obračun uzima u obzir planirano radno vreme, rasporede, praznike i evidentirana odsustva.
-
-Prekovremeni sati se prate odvojeno, uz mogućnost evidencije njihovog korišćenja ili isplate.
-
-### 4. Administracija i izveštavanje
-
-Administratori imaju pregled radnih aktivnosti, odsustava, rasporeda i obračuna.
-
-Podaci se mogu pregledati po zaposlenom, gradilištu i obračunskom periodu, uz mogućnost izvoza odgovarajućih izveštaja.
-
----
-
-## Korisničke uloge
-
-ULCREW koristi različite nivoe pristupa kako bi svaki korisnik imao funkcije potrebne za svoj posao.
-
-### Vlasnik / Glavni administrator
-
-Ima potpun pristup upravljanju kompanijom, administratorskim nalozima, zaposlenima, gradilištima i podešavanjima.
-
-### Administrator
-
-Upravlja zaposlenima, rasporedima, evidencijama radnog vremena, odsustvima i izveštajima.
-
-### Šef gradilišta
-
-Organizuje rad i prati evidenciju zaposlenih na gradilištima koja su mu dodeljena.
-
-### Radnik
-
-Koristi Android aplikaciju za GPS evidenciju, pregled radnih rasporeda, radnih sati, prekovremenog rada i zahteva za odsustvo.
-
----
-
-## Glavne mogućnosti platforme
-
-- **GPS evidencija** — prijava i odjava sa proverom lokacije.
-- **Upravljanje gradilištima** — organizacija radnih lokacija i zaposlenih.
-- **Radni rasporedi** — nedeljni planovi rada i dodeljivanje gradilišta.
-- **Prekovremeni sati** — automatski obračun i praćenje salda.
-- **Godišnji odmori i odsustva** — zahtevi, odobravanja i evidencija.
-- **Offline rad** — evidentiranje bez internet konekcije i naknadna sinhronizacija.
-- **Obaveštenja** — podsetnici i upozorenja o važnim aktivnostima.
-- **Mesečni obračuni** — pregled, kontrola i zaključavanje obračunskih perioda.
-- **Izveštaji** — izvoz podataka o radnom vremenu i odsustvima.
-
----
-
-## O ovoj dokumentaciji
-
-Ova dokumentacija namenjena je svim korisnicima ULCREW platforme.
-
-Uputstva su organizovana prema korisničkim ulogama i funkcionalnostima, kako biste brzo pronašli informacije koje su vam potrebne.
-
-Svako praktično uputstvo obuhvata opis funkcije, postupak korišćenja i, gde je potrebno, slike ekrana sa primerima.
-
-**Preporučujemo da novi korisnici započnu od poglavlja „Prvi koraci“, a zatim nastave sa uputstvima za svoju korisničku ulogu.**
-
----
-
-**ULCREW — Vaš tim. Vaša gradilišta. Jedna platforma.**
+<Note>
+Uputstva su na srpskom (latinica). Neke oznake i raspored dugmadi mogu se neznatno razlikovati između verzija aplikacije.
+</Note>
